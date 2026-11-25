@@ -40,5 +40,10 @@ img {
 }
 
 .imggeral {
+    display: block;
+    margin: auto;
+}
 
+.text1 {
+    text-align: center;
 }
