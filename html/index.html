@@ -88,7 +88,7 @@
 -->
     <div>
       <section id="tuba">
-        <h1 class="cl1">Tubarão-da-groenlândia</h1>
+        <h1 class="bixo">Tubarão-da-groenlândia</h1>
       </section>
     </div>
     <div class="text1">
@@ -161,7 +161,7 @@
 -->
     <div>
       <section id="baleia">
-        <h1>Baleia-Azul</h1>
+        <h1 class="bixo">Baleia-Azul</h1>
       </section>
     </div>
     <div class="text1">
@@ -219,7 +219,7 @@
                                                         
 -->
       <section id="peixe">                        
-        <h1 class="cl1">Peixe-leão</h1>
+        <h1 class="bixo">Peixe-leão</h1>
       </section>
     </div>
     <div class="text1">
@@ -266,36 +266,24 @@
         </div>
         <div class="mapap2">
             <img src="../img/mapapeixeleao.png" alt="" class="imggeral">
-    <div>
-      <form name="meuForm" method="post" id="formulario">
-        <div class="box">
-          <h1>Formulario de Contato :</h1>
-      
-          <label>
-            <span class="spann">Nome Completo</span>
-             <input type="text" class="input_text" name="nome" id="name"/>
-      
-          </label>
-      
-          <label>
-             <span>Email</span>
-            <input type="text" class="input_text" name="email" id="email"/>
-           </label>
-      
-          <label>
-             <span>Assunto</span>
-            <input type="text" class="input_text" name="assunto" id="subject"/>
-          </label>
-      
-          <label>
-             <span>Mensagem</span>
-            <textarea class="message" name="feedback" id="feedback"></textarea>
-            <input type="button" class="button" value="Enviar" />
-          </label>
         </div>
+      <form class="formulario" action="#" method="post">
+        <h2>Entre em contato</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
       </form>
-    </div>
-    </div>
     <footer>
       <p>© Site do Lorenzo. Todos os direitos reservados.</p>
     </footer>
