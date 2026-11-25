@@ -12,3 +12,13 @@ img {
     text-align: center;
 }
 
+.titulo {
+    font-size: 75px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
