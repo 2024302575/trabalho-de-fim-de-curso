@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais-Marinhos</title>
     <link rel="stylesheet" type="text/css" href="../Css/index.css">
+    <main>
+    <img src="../img/logoboa.png" class="logo">
+    <p class="titulo">Animais Marinhos</p>
+    <p class="subtitulo">Das profundesas marinhas para sua tela</p>
+    <div class="imgbanner">
+      <img id="banner" src="../img/baleia2.jpg">
+    </div>
+  </main>
+  <footer>
+    <button onclick="location='#baleia'">Baleia-Azul</button>
+    <button onclick="location='#tuba'">Tubarão-da-groenlândia</button>
+    <button onclick="location='#peixe'">Peixe-Leão</button>
+  </footer>
 </head>
 <body>
+  <script>
+    var imagens = ["../img/peileao1.jpg","../img/tuba2.jpg","../img/baleia4.jpg"];
+    var posicao = 0;
+    function trocar() {
+      posicao = posicao + 1;
+
+      if (posicao == 3) {
+        posicao = 0;
+      }
+
+      document.getElementById("banner").src = imagens[posicao];
+    }
+
+    // 4. Chama a função a cada 3 segundos
+    setInterval(trocar, 3000);
+  </script>
   <style>
     body {
       margin: 0;
@@ -42,57 +71,16 @@
     footer button:hover {
       background: #357abd;
     }
-  </style>
-</head>
-<body>
-  <main>
-    <img src="../img/logo.png" class="logo">
-    <p class="titulo">Animais Marinhos</p>
-  </main>
-  <head>
-  <style>
+
     #banner {
-      width: 100%;
-      max-width: 800px;
-      height: 300px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-
-<body>
-  <img id="banner" src="../img/baleia2.jpg">
-
-  <script> sr
-    // 1. Lista com as imagens
-    var imagens = ["../img/peileao1.jpg",];
-
-    // 2. Posição da imagem que está aparecendo (0 = primeira)
-    var posicao = 0;
-
-    // 3. Função que troca a imagem
-    function trocar() {
-      posicao = posicao + 1;
-
-      if (posicao == 3) {
-        posicao = 0;
+        width: 100%;
+        max-width: 800px;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
       }
-
-      document.getElementById("banner").src = imagens[posicao];
-    }
-
-    // 4. Chama a função a cada 3 segundos
-    setInterval(trocar, 3000);
-  </script>
-
-
-  <footer>
-    <button onclick="location='#baleia'">Baleia-Azul</button>
-    <button onclick="location='#tuba'">Tubarão-da-groenlândia</button>
-    <button onclick="location='#peixe'">Peixe-Leão</button>
-  </footer>
+  </style>
 <!--                                                
        
                                                Tubarão da groelandia
@@ -117,7 +105,7 @@
     </div>
     <div class="img">
       <br>
-      <img src="../img/tubara1.jpg" alt="Foto de tubarão">
+      <img src="../img/tubara1.jpg" alt="Foto de tubarão" class="imggeral">
     </div>
     <div>
         <div class="textao">
@@ -162,7 +150,7 @@
             <h1>Distribuição Geográfica</h1>
         </div>
         <div class="img">
-            <img src="../img/mapa.png" alt="">
+            <img src="../img/mapa.png" alt="" class="imggeral">
         </div>
       </div>
     <div>
@@ -192,7 +180,7 @@
     </div>
     <div class="img">
       <br>
-      <img src="../img/baleia1.jpg" alt="Foto de tubarão">
+      <img src="../img/baleia1.jpg" alt="Foto de tubarão" class="imggeral">
     </div>
     <div>
         <div class="textao2">
@@ -224,7 +212,7 @@
             <h1>Distribuição Geográfica</h1>
         </div>
         <div class="mapap2">
-            <img src="../img/baleiaazulmapa.jpg" alt="">
+            <img src="../img/baleiaazulmapa.jpg" alt="" class="imggeral">
         </div>
     </div>
     </div>
@@ -252,7 +240,7 @@
     </div>
     <div class="img2">
       <br>
-      <img src="../img/peixe9.webp" alt="Foto de tubarão">
+      <img src="../img/peixe9.webp" alt="Foto de tubarão" class="imggeral">
     </div>
         <div class="textao2">
             <h1>Uma expécie invasora</h1>
@@ -283,7 +271,7 @@
             <h1>Distribuição Geográfica</h1>
         </div>
         <div class="mapap2">
-            <img src="../img/mapapeixeleao.png" alt="">
+            <img src="../img/mapapeixeleao.png" alt="" class="imggeral">
     <div>
       <form name="meuForm" method="post" id="formulario">
         <div class="box">
@@ -314,5 +302,8 @@
       </form>
     </div>
     </div>
+    <footer>
+      <p>© Site do Lorenzo. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
